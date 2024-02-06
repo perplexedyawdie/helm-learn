@@ -147,13 +147,17 @@ rm -rf my-n8n/templates/*.yaml my-n8n/templates/tests
 
 ```
 
-8. Update the `appVersion` in `Chart.yaml` to "**1.27.2"**
+8. Update the appVersion in Chart.yaml to "1.27.2" & clear the contents of my-n8n/templates/NOTES.txt file then update with the following.
     
 
 ```bash
 nano my-n8n/Chart.yaml
-
 # appVersion: "1.27.2"
+
+nano my-n8n/templates/NOTES.txt
+# Welcome to n8n.
+# Wait a few minutes until the status changes to RUNNING.
+# After it is ready, access it from: http://localhost:2223
 
 ```
 
